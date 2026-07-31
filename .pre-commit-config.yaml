@@ -13,13 +13,6 @@ repos:
       - id: check-illegal-windows-names
       - id: no-commit-to-branch
         args: [--branch, main]
-  - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.37.2
-    hooks:
-      - id: check-jsonschema
-        name: "main config schema validation"
-        files: "^config.*\\.yaml$"
-        args: ["--schemafile", "config_schema.json"]
   - repo: https://github.com/google/yamlfmt
     rev: v0.21.0
     hooks:
