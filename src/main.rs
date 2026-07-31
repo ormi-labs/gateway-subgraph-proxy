@@ -35,7 +35,7 @@ struct ProgramArgs {
         long,
         help = "Address to listen on",
         env = "PROXY_LISTEN_ADDRESS",
-        default_value = "127.0.0.1:3000"
+        default_value = "0.0.0.0:3000"
     )]
     listen: String,
 
